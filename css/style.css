@@ -545,10 +545,21 @@ img.brand-logo {
 
   .testi-grid {
     grid-template-columns: 1fr;
+    gap:40px;
   }
 
   .why-feature {
-    flex-direction: column;
+    flex-direction: row;
+    gap: 12px;
+  }
+
+  .why-feature-title {
+    font-size: 1rem;
+  }
+
+  .why-feature-desc {
+    font-size: .95rem;
+    line-height: 1.6;
   }
 
    .why-person {
@@ -557,7 +568,12 @@ img.brand-logo {
   }
 
   .why-visual {
-    padding: 30px 20px;
+    padding: 24px;
+  }
+
+
+  .why-quote{
+    font-size: 1.4rem;
   }
 }
 
@@ -580,4 +596,50 @@ img.brand-logo {
   select {
     font-size: .95rem;
   }
+}
+
+@media (max-width: 480px) {
+
+  .why-grid {
+    gap: 30px;
+  }
+
+  .why-visual {
+    padding: 20px;
+    border-radius: 18px;
+  }
+
+  .why-quote {
+    font-size: 1.2rem;
+    line-height: 1.5;
+  }
+
+  .why-person {
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .why-avatar {
+    width: 50px;
+    height: 50px;
+    font-size: .9rem;
+  }
+
+  .why-feature {
+    gap: 10px;
+  }
+
+  .why-feature-icon {
+    font-size: 1.2rem;
+  }
+
+  .why-feature-title {
+    font-size: .95rem;
+  }
+
+  .why-feature-desc {
+    font-size: .9rem;
+  }
+
 }
