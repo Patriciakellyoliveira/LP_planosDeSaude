@@ -110,14 +110,14 @@
     font-style: italic;
   }
   .hero-subtitle {
-    color: var(--text);
+    color: black;
     font-size: 1.05rem;
     line-height: 1.7;
     margin-bottom: 40px;
     max-width: 480px;
   }
 
-   .hero-subtitle strong { color: var(--text); }
+   .hero-subtitle strong { color: black; }
   .hero-btns { display: flex; gap: 16px; flex-wrap: wrap; }
   .btn-primary {
     background: linear-gradient(135deg, var(--green2), var(--green));
