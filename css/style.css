@@ -289,6 +289,7 @@ img.brand-logo {
     color: var(--blue);
     line-height: 1.2;
     margin-bottom: 20px;
+    white-space: nowrap;
   }
   .section-title .gold { color: var(--blue); font-style: italic; }
   .section-desc { color: var(--gray); font-size: 1.05rem; line-height: 1.75; max-width: 560px; }
