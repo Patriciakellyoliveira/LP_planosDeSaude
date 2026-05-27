@@ -285,7 +285,8 @@ img.brand-logo {
   .section-title {
     font-family: 'Playfair Display', serif;
     font-size: clamp(2rem, 3.5vw, 3rem);
-    color: var(--navy);
+    font-style: italic;
+    color: var(--blue);
     line-height: 1.2;
     margin-bottom: 20px;
   }
