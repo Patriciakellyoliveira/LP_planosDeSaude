@@ -279,20 +279,24 @@ img.brand-logo {
   
 
   /* ── SECTION WRAPPER ── */
-  .section { padding: 100px 5%; }
-  .section-inner { max-width: 1200px; margin: 0 auto; }
+  .section {padding: 80px 20px;; }
+  .section-inner {  
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto; 
+}
   .section-tag { color: var(--blue); font-size: .75rem; font-weight: 700; letter-spacing: .2em; text-transform: uppercase; margin-bottom: 12px; }
   .section-title {
     font-family: 'Playfair Display', serif;
-    font-size: clamp(2rem, 3.5vw, 3rem);
+    font-size: clamp(2rem, 4vw, 3.2rem);
     font-style: italic;
     color: var(--blue);
     line-height: 1.2;
     margin-bottom: 20px;
-    white-space: nowrap;
+    white-space: nowrap
   }
   .section-title .gold { color: var(--blue); font-style: italic; }
-  .section-desc { color: var(--gray); font-size: 1.05rem; line-height: 1.75; max-width: 560px; }
+  .section-desc { color: var(--gray); font-size: 1rem; line-height: 1.7; max-width: 560px; }
 
   /* ── SERVICES ── */
   #services { background: var(--off-white); }
@@ -332,11 +336,11 @@ img.brand-logo {
 
   /* ── WHY US ── */
   #why { background: var(--white); }
-  .why-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; }
+  .why-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
   .why-visual {
     background: linear-gradient(145deg,var(--navy-dark),var(--navy));
-    border-radius: 28px;
-    padding: 48px 40px;
+    border-radius: 24px;
+    padding: 40px;
     position: relative; overflow: hidden;
   }
   .why-visual::after {
@@ -348,34 +352,34 @@ img.brand-logo {
   }
   .why-quote {
     font-family: 'Playfair Display', serif;
-    font-size: 1.6rem; font-style: italic;
+    font-size: clamp(1.4rem, 3vw, 2rem); font-style: italic;
     color: var(--white); line-height: 1.5;
-    position: relative; z-index: 1; margin-bottom: 32px;
+    position: relative; z-index: 1; margin-bottom: 30px;
   }
   .why-quote::before { content: '"'; color: var(--dark-blur); font-size: 3rem; line-height: 0; vertical-align: -0.5em; margin-right: 4px; }
   .why-person { display: flex; align-items: center; gap: 16px; position: relative; z-index: 1; }
   .why-avatar {
-    width: 52px; height: 52px; border-radius: 50%;
+    width: 60px; height: 60px; border-radius: 50%;
     background: linear-gradient(135deg,var(--dark),var(--dark-blur));
     display: flex; align-items: center; justify-content: center;
     font-family: 'Playfair Display', serif; font-size: 1.3rem; color: var(--navy-dark); font-weight: 700;
   }
   .why-person-name { color: var(--white); font-weight: 700; }
   .why-person-role { color: rgba(255,255,255,.5); font-size: .8rem; }
-  .why-features { display: flex; flex-direction: column; gap: 28px; margin-top: 48px; }
-  .why-feature { display: flex; gap: 20px; align-items: flex-start; }
+  .why-features { display: flex; flex-direction: column; gap: 24px; margin-top: 48px; }
+  .why-feature { display: flex; gap: 18px; align-items: flex-start; }
   .why-feature-icon {
     width: 48px; height: 48px; border-radius: 14px; flex-shrink: 0;
     background: linear-gradient(135deg,rgba(201,168,76,.15),rgba(201,168,76,.05));
     border: 1px solid rgba(201,168,76,.25);
-    display: flex; align-items: center; justify-content: center; font-size: 1.2rem;
+    display: flex; align-items: center; justify-content: center; font-size: 1.8rem;
   }
-  .why-feature-title { font-weight: 700; color: var(--navy); margin-bottom: 6px; }
+  .why-feature-title { font-weight: 700; color: var(--navy); margin-bottom: 6px; font-size: 1.1rem; }
   .why-feature-desc { color: var(--gray); font-size: .9rem; line-height: 1.65; }
 
   /* ── TESTIMONIALS ── */
   #testimonials { background: var(--off-white); }
-  .testi-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; margin-top: 60px; }
+  .testi-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 50px; }
   .testi-card {
     background: var(--white); border-radius: 20px; padding: 32px;
     border: 1px solid rgba(13,31,78,.07);
@@ -383,10 +387,10 @@ img.brand-logo {
   }
   .testi-card:hover { transform: translateY(-4px); box-shadow: 0 16px 40px rgba(13,31,78,.09); }
   .testi-stars { color: var(--gold); font-size: 1.1rem; margin-bottom: 16px; letter-spacing: 2px; }
-  .testi-text { color: var(--text); font-size: .95rem; line-height: 1.75; margin-bottom: 24px; font-style: italic; }
-  .testi-author { display: flex; align-items: center; gap: 12px; }
+  .testi-text { color: var(--text); font-size: .95rem; line-height: 1.75; margin: 20px 0; font-style: italic; }
+  .testi-author { display: flex; align-items: center; gap: 14px; }
   .testi-initials {
-    width: 40px; height: 40px; border-radius: 50%;
+    width: 50px; height: 50px; border-radius: 50%;
     background: linear-gradient(135deg,var(--navy),var(--navy-mid));
     color: var(--white); font-weight: 700; font-size: .85rem;
     display: flex; align-items: center; justify-content: center;
@@ -407,7 +411,7 @@ img.brand-logo {
     background: radial-gradient(circle,rgba(201,168,76,.1) 0%,transparent 70%);
     border-radius: 50%;
   }
-  .form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: flex-start; max-width: 1200px; margin: 0 auto; position: relative; z-index: 1; }
+  .form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: flex-start; max-width: 1200px; margin: 0 auto; position: relative; z-index: 1; }
   .form-info .section-title { color: var(--white); }
   .form-info .section-desc { color: rgba(255,255,255,.6); }
   .form-benefits { margin-top: 40px; display: flex; flex-direction: column; gap: 16px; }
@@ -420,13 +424,14 @@ img.brand-logo {
   }
 
   form {
+    width: 100%; 
     background: rgba(255,255,255,.06);
     border: 1px solid rgba(255,255,255,.12);
     border-radius: 24px;
     padding: 44px 40px;
     backdrop-filter: blur(20px);
   }
-  .form-group { margin-bottom: 22px; }
+  .form-group { margin-bottom: 20px; }
   label { display: block; color: rgba(255,255,255,.75); font-size: .82rem; font-weight: 600; letter-spacing: .08em; margin-bottom: 8px; text-transform: uppercase; }
   input, select, textarea {
     width: 100%; padding: 14px 18px;
@@ -435,7 +440,7 @@ img.brand-logo {
     border-radius: 12px;
     color: var(--white);
     font-family: 'DM Sans', sans-serif;
-    font-size: .95rem;
+    font-size: 1rem;
     transition: border-color .2s, background .2s;
     outline: none;
   }
@@ -445,12 +450,12 @@ img.brand-logo {
     background: rgba(255,255,255,.1);
   }
   select option { background: var(--navy); color: var(--white); }
-  textarea { resize: vertical; min-height: 110px; }
+  textarea { resize: vertical; min-height: 120px; }
   .btn-submit {
-    width: 100%; padding: 18px;
+    width: 100%; padding: 16px;
     background: linear-gradient(135deg,var(--green2),var(--green));
     color: var(--white); font-weight: 800; font-size: 1.05rem;
-    border: none; border-radius: 50px; cursor: pointer;
+    border: none; border-radius: 14px; cursor: pointer;
     transition: transform .2s, box-shadow .2s;
     display: flex; align-items: center; justify-content: center; gap: 10px;
     letter-spacing: .04em; margin-top: 8px;
@@ -491,8 +496,11 @@ img.brand-logo {
   .reveal.visible { opacity: 1; transform: translateY(0); }
 
   /* ── RESPONSIVE ── */
-  @media (max-width: 900px) {
+  @media (max-width: 992px) {
     .hero-grid, .why-grid, .form-grid { grid-template-columns: 1fr; gap: 40px; }
+    .testi-grid {
+    grid-template-columns: 1fr 1fr;
+  }
     .hero-visual { justify-content: center; }
     .hero-stats { flex-wrap: wrap; gap: 20px; }
     .services-header { flex-direction: column; align-items: flex-start; }
@@ -522,5 +530,54 @@ img.brand-logo {
 
   .brand-logo {
     max-height: 55px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .section {
+    padding: 60px 20px;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .testi-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .why-feature {
+    flex-direction: column;
+  }
+
+   .why-person {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .why-visual {
+    padding: 30px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .section-title {
+    font-size: 1.7rem;
+  }
+
+  .why-quote {
+    font-size: 1.3rem;
+  }
+
+  .btn-submit {
+    font-size: .95rem;
+  }
+
+  input,
+  textarea,
+  select {
+    font-size: .95rem;
   }
 }
