@@ -239,6 +239,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  min-height: 140px;
 }
 
 
@@ -249,7 +250,7 @@
 }
 .brand-logo {
   max-width: 100%;
-  max-height: 70px;
+  max-height: 65px;
   width: auto;
   height: auto;
   object-fit: contain;
@@ -261,7 +262,7 @@ img.brand-logo {
 }
 
 .logo-wrap {
-  width: 100%;
+  width: 180%;
   height: 80px;
 
   display: flex;
@@ -532,8 +533,12 @@ img.brand-logo {
   .brand-logo {
     max-height: 55px;
   }
-}
 
+  .logo-wrap {
+    width: 140px;
+    height: 60px;
+}
+}
 @media (max-width: 768px) {
 
   .section {
@@ -645,6 +650,7 @@ img.brand-logo {
   }
 
 }
+
 @media (max-width: 768px) {
 
   .why-grid {
